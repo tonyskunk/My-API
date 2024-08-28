@@ -64,15 +64,3 @@ func getUser(c *gin.Context) {
 		"name":    "John Doe",
 	})
 }
-
-/*func postUser(c *gin.Context) {
-	var user map[string]interface{}
-	if err := c.BindJSON(&user); err != nil {
-		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
-		return
-	}
-	c.JSON(http.StatusCreated, gin.H{
-		"status": "user created",
-		"user":   user,
-	})
-}*/
